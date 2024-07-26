@@ -4,7 +4,7 @@
   "description": "The best way to watch videos.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/euisak/likelion.git"
+    "url": "https://github.com/euisak/calendar.git"
   },
   "scripts": {
     "dev": "nodemon --exec babel-node src/server.js"
@@ -16,6 +16,8 @@
   },
   "homepage": "https://github.com/euisak/likelion#readme",
   "dependencies": {
+    "@fullcalendar/core": "^5.11.0",
+    "@fullcalendar/daygrid": "^5.11.0",
     "express": "^4.19.2",
     "fullcalendar": "^6.1.15",
     "morgan": "^1.10.0",
