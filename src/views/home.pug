@@ -28,13 +28,14 @@ block content
 
 //-
   h2 Welcome here you will see the trending posts
-  each post in posts
-    div
-      h4= post.title
-      ul
-        li #{post.rating}/5.
-        li #{post.comments} comments.
-        li Posted #{post.createdAt}.
-        li #{post.views} views.
-  else
-    li Sorry nothing found.
+  ul
+    each post in posts
+      li
+        h4= post.title
+        ul
+          li #{post.rating}/5.
+          li #{post.comments} comments.
+          li Posted #{post.createdAt}.
+          li #{post.views} views.
+    else
+      li Sorry nothing found.
